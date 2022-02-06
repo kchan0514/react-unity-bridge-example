@@ -1,5 +1,29 @@
 # Getting Started with Create React App
 
+
+1. Install npm packages with npm commands.
+
+```
+npm install
+```
+
+2. Build react package
+
+```
+npm run build
+```
+
+3. Launch host 
+
+```
+npm start
+```
+
+
+
+
+# Getting Started with Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
