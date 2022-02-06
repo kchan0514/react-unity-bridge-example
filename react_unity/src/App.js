@@ -15,13 +15,18 @@ const unityContext = new UnityContext({
 
 
 function App() {
-  function spawnEnemies() {
-    //  unityContext.send("GameController", "SpawnEnemies", 100);
+  function moveRight() {
+    unityContext.send("Sphere", "MoveRight", 10);
+  }
+  function moveLeft() {
+    unityContext.send("Sphere", "MoveLeft", 10);
   }
 
   return (
     <div>
-      <button onClick={spawnEnemies}>Spawn a bunch!</button>
+      <button onClick={moveRight}>MoveRight</button>
+      <button onClick={moveLeft}>MoveLeft</button>
+      
       <Unity unityContext={unityContext} 
         style={{
           height: "100%",
